@@ -107,6 +107,7 @@ VALUES
 
 -- Sql Queries --
 -- Basic Queries --
+    
 Query 1: List all books
 Ans-- SELECT * FROM Books;
 
@@ -118,10 +119,10 @@ Ans-- SELECT b.title, b.genre, b.publication_year
 
 Query 3: Find all customers who borrowed a specific book (e.g., '1984')
 Ans-- SELECT c.first_name, c.last_name, l.loan_date, l.return_date
-      FROM Loans l
-      JOIN Customers c ON l.customer_id = c.customer_id
+      FROM Customers c
+      JOIN Loans l ON l.customer_id = c.customer_id
       JOIN Books b ON l.book_id = b.book_id
-      WHERE b.title = '1984';
+      WHERE b.title = 1984;
 
 Query 4: List all authors
 Ans-- SELECT * FROM Authors;
@@ -153,9 +154,9 @@ Ans-- SELECT b.title, COUNT(l.loan_id) AS borrow_count
       HAVING borrow_count > 1;
 
 Query 4: Find all books by a specific genre (e.g., 'Fantasy')
-Ans-- SELECT b.title, b.author_id, b.publication_year
-      FROM Books b
-      WHERE b.genre = 'Fantasy';
+Ans-- SELECT title, author_id, publication_year
+      FROM Books
+      WHERE genre = 'Fantasy';
 
 Query 5: Find the customer who borrowed the most books
 Ans-- SELECT c.first_name, c.last_name, COUNT(l.loan_id) AS borrow_count
@@ -184,7 +185,7 @@ Ans-- SELECT COUNT(l.loan_id) AS total_books_borrowed
       WHERE l.loan_date BETWEEN '2023-09-01' AND '2023-09-30';
 
 Query 4: Find the most common genre borrowed by customers
-Ans-- SELECT b.genre, COUNT(l.loan_id) AS borrow_count
+Ans-- SELECT b.genre, COUNT(l.book_id) AS borrow_count
       FROM Books b
       JOIN Loans l ON b.book_id = l.book_id
       GROUP BY b.genre
