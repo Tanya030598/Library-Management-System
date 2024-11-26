@@ -1,16 +1,16 @@
-PROJECT TITLE: Library Management System
+PROJECT TITLE: **Library-Management-System**
 
-DESCRIPTION: 
+DESCRIPTION: This System is a software that helps manage books, customers registrations, loans, and authors. It uses a database to store, update, and find information about books, 
+             customers, and loans transactions easily.
 
-PURPOSE: 
+PURPOSE: The purpose of this system is to make it easier to manage books, authors, customers and transactions in a library. It uses to quickly track, update, and find library information.
 
-TECHNICAL SKILLS: Experienced in using SQL for database design, data manipulation, and query optimization. Skilled in:
-  - Writing complex queries (JOINs, subqueries, etc.)
-  - Creating and managing database schemas and tables
-  - Performing CRUD operations (Create, Read, Update, Delete)
-  - Database normalization and relationship management
-  - Data aggregation and reporting
-  - Using MySQL/PostgreSQL for relational database management
-RESULT: 
+TECHNICAL SKILLS: In this project we create and manage database schemas and tables.
+                  Performing CRUD operations (Create, Read, Update, Delete)
+                  Writing complex queries (Joins, subqueries, etc.)
+                  Database normalization and relationship management
+                  Data aggregation and reporting
+                  
+RESULT: This System helps manage student information, course sign-ups, and grades using SQL. It makes it easy to track student progress and access their records.
 
-LINK: https://github.com/Tanya030598/Library-Management-System
+Link: https://github.com/Tanya030598/Library-Management-System
