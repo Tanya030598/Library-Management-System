@@ -13,4 +13,4 @@ TECHNICAL SKILLS: In this project we create and manage database schemas and tabl
                   
 RESULT: This System helps manage student information, books and loans using SQL. It makes it easy to track student data and access their records.
 
-Link: https://github.com/Tanya030598/Library-Management-System
+Link: https://github.com/Tanya030598/Library-Management-System/blob/main/Library-Management.sql
